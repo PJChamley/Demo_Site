@@ -1,0 +1,6 @@
+[submodule "src/SubModules/Demo_Service1"]
+	path = src/SubModules/Demo_Service1
+	url = https://github.com/PJChamley/Demo_Service1
+[submodule "src/SubModules/Demo_Service2"]
+	path = src/SubModules/Demo_Service2
+	url = https://github.com/PJChamley/Demo_Service2
