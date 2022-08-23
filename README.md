@@ -49,7 +49,7 @@ If you have multiple submodules, you'll have multiple entries in this file. It's
 
 ### Check the folder and see if Sub Modules are empty or look wrong.
 
-![image.png](/.readmemd/git.submodules/git.error2.png)
+![image.png](/.readmemd/git.submodules/git.submodule.pull.not.worked.png)
 
 Issue above looks to be empty directory.
 
@@ -62,6 +62,15 @@ You must run two commands: git submodule init to initialize your local configura
 
 open up Terminal windows and Navigate to the Sub Module folder with an issue. In our example "Demo_Service1".
 Then Run the following git commands.
+
+
+```
+git clone --recurse-submodules https://github.com/PJChamley/Demo_Site
+```
+
+If this does not work, next thing to try in each of the submodules is the following commands.
+You may need to run 
+
 
 ```
 git submodule init
