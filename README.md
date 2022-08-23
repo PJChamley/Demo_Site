@@ -33,6 +33,15 @@ git status
 ![image.png](/.readmemd/git.submodules/git.status.command.after.just.adding.submodule.png)
 
 
+If all is clone correctly then Vissual Studio 2022 should show multiple Repo in the Git changes Windows
+
+![image.png](/.readmemd/git.submodules/visualstudio.2022.MultipleRepoSupport.png)
+
+You can manage each repo from the Git Repositories windows.
+You may need to commit and push to multiple repo's. Typically this required using the Git Repository Windows as pushing to multiple repo see to be a bit hit and miss.
+
+Quickest way to Git Repo Windows is to click the link show below.
+![image.png](/.readmemd/git.submodules/visualstudio.2022.GitRepoLinkFromGitChanges.png)
 
 First you should notice the new .gitmodules file. This is a configuration file that stores the mapping between the project's URL and the local subdirectory you've pulled it into:
 
@@ -60,7 +69,7 @@ The directory is there, but empty.
 ## Possible Fix 1
 You must run two commands: git submodule init to initialize your local configuration file, and git submodule update to fetch all the data from that project and check out the appropriate commit listed in your superproject:
 
-open up Terminal windows and Navigate to the Sub Module folder with an issue. In our example "Demo_Service1".
+open up Terminal windows and Navigate root folder of the .
 Then Run the following git commands.
 
 
