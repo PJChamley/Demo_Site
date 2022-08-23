@@ -16,6 +16,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\Demo.WebSite.Models\Demo.WebSite.Models.csproj" />
 		<ProjectReference Include="..\SubModules\Demo_Service1\src\Demo.Service1\Demo.Service1.csproj" />
 		<ProjectReference Include="..\SubModules\Demo_Service2\src\Demo.Service2\Demo.Service2.csproj" />
 	</ItemGroup>
