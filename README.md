@@ -15,17 +15,18 @@ Change to 'src' folder under Repository folder.
 
 Run:
 ```
+git submodule add https://github.com/PJChamley/Demo_Common SubModules/Demo_Common
 git submodule add https://github.com/PJChamley/Demo_Service1 SubModules/Demo_Service1
 git submodule add https://github.com/PJChamley/Demo_Service2 SubModules/Demo_Service2
 ```
 
-This is the result I had running the above command:
+This is the result I had when adding the Sercice1 & Service2 repos as sub modules.
 
 ![image.png](/.readmemd/git.submodules/add.submodule.command.result.png)
 
 By default, submodules will add the subproject into a directory named the same as the repository, in this case "Demo_Common". But as you can see we have told the submodules to be create under a folder structure this should keep multiple submodles in the same location and thing should be a bit cleaner.
 
-If you run 'git status' at this point, you�ll notice a few things.
+If you run 'git status' at this point, you'll notice a few things.
 ```
 git status
 ```
@@ -33,11 +34,11 @@ git status
 
 
 
-First you should notice the new .gitmodules file. This is a configuration file that stores the mapping between the project�s URL and the local subdirectory you�ve pulled it into:
+First you should notice the new .gitmodules file. This is a configuration file that stores the mapping between the project's URL and the local subdirectory you've pulled it into:
 
 ![image.png](/.readmemd/git.submodules/.gitmodules.example.content.png)
 
-If you have multiple submodules, you�ll have multiple entries in this file. It�s important to note that this file is version-controlled with your other files, like your .gitignore file. It�s pushed and pulled with the rest of your project. This is how other people who clone this project know where to get the submodule projects from.
+If you have multiple submodules, you'll have multiple entries in this file. It's important to note that this file is version-controlled with your other files, like your .gitignore file. It's pushed and pulled with the rest of your project. This is how other people who clone this project know where to get the submodule projects from.
 
 
 
@@ -74,7 +75,6 @@ git submodule init
 
 # Remove Sub module
 
-
 ```
 # Remove the submodule entry from .git/config
 git submodule deinit -f path/to/submodule
@@ -85,4 +85,7 @@ rm -rf .git/modules/path/to/submodule
 # Remove the entry in .gitmodules and remove the submodule directory located at path/to/submodule
 git rm -f path/to/submodule
 
+
 ```
+
+Now Commit changes and push to remote.
