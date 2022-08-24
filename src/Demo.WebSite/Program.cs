@@ -1,7 +1,26 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+
+using Demo.Service1;
+using Demo.Service2;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+// Register AutoFac dependencies
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory(containerBuilder =>
+{
+    containerBuilder.RegisterModule(new Service1Module()
+    {
+    });
+    containerBuilder.RegisterModule(new Service2Module()
+    {
+    });
+
+}));
 
 var app = builder.Build();
 
